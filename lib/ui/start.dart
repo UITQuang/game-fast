@@ -22,7 +22,7 @@ class _StartPageState extends State<StartPage> {
           children: [
             const Padding(
               padding: EdgeInsets.only(top: 200.0),
-              child: Text("No1 server : 99"),
+              child: Text("No1 server : 999"),
             ),
             Center(
               child: GestureDetector(
@@ -55,8 +55,12 @@ class _StartPageState extends State<StartPage> {
             Padding(
               padding: const EdgeInsets.only(top: 100.0),
               child: (box.get("highScore") != null)
-                  ? Text('Your high score: ' + box.get("highScore"),style: TextStyle(fontSize: 18))
-                  : const Text("Your high score: 0",style: TextStyle(fontSize: 18),),
+                  ? Text('Your high score:   ${box.get("highScore")}',
+                      style: const TextStyle(fontSize: 18))
+                  : const Text(
+                      "Your high score: 0",
+                      style: TextStyle(fontSize: 18),
+                    ),
             ),
           ],
         ),

@@ -22,7 +22,7 @@ class _StartPageState extends State<StartPage> {
           children: [
             const Padding(
               padding: EdgeInsets.only(top: 200.0),
-              child: Text("No1 server : 999"),
+              child: Text("No1 server : 1234.5"),
             ),
             Center(
               child: GestureDetector(
